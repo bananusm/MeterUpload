@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Upload meter readings";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Upload a meter readings csv file here</p>
+@*<form method="POST" enctype="multipart/form-data" action="https://localhost:44348/meter-reading-uploads">*@
+<hr>
+<div class="form-group">
+    <input required class="form-control-file" type="file" id="File">
+</div>
+<span class="text-danger text-right"></span>
+<button class="btn btn-primary mb-4" type="button" id="button">Submit</button>
+@*</form>*@
+
+<script>
+    
+    $('#button').click(function () {
+        var file = document.getElementById("File").files[0];
+        if (file) {
+            var reader = new FileReader();
+            reader.readAsText(file, "UTF-8");
+            reader.onload = function (evt) {
+                var filecontent = evt.target.result;
+                console.log(filecontent);
+                //$.post("https://localhost:44348/meter-reading-uploads", { csv: filecontent }, function (result) {
+                //    $("span").html(result);
+                //    console.log(result)
+                //});
+                $.ajax({
+                    url: "https://localhost:44348/meter-reading-uploads",
+                    type: "POST",
+                    data: JSON.stringify({ csv: filecontent }),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (result) {
+                        console.log(result)
+                    },
+                    error: function (result) {
+                        console.log(result)
+                    }
+                })
+            }
+            reader.onerror = function (evt) {
+                console.log("error reading file");
+            }
+        }
+    })
+
+    
+</script>

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterUpload", "MeterUpload\MeterUpload.csproj", "{09BA95BF-9D27-4BB3-8A22-60A84E9F43E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{F5BA7BD9-9E53-4577-B7E9-ADF54C335844}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{7AB1760A-1667-4185-8431-8C1A9FC7A016}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09BA95BF-9D27-4BB3-8A22-60A84E9F43E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09BA95BF-9D27-4BB3-8A22-60A84E9F43E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09BA95BF-9D27-4BB3-8A22-60A84E9F43E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09BA95BF-9D27-4BB3-8A22-60A84E9F43E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5BA7BD9-9E53-4577-B7E9-ADF54C335844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5BA7BD9-9E53-4577-B7E9-ADF54C335844}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5BA7BD9-9E53-4577-B7E9-ADF54C335844}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5BA7BD9-9E53-4577-B7E9-ADF54C335844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AB1760A-1667-4185-8431-8C1A9FC7A016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB1760A-1667-4185-8431-8C1A9FC7A016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB1760A-1667-4185-8431-8C1A9FC7A016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB1760A-1667-4185-8431-8C1A9FC7A016}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FC88D94-0CDB-4849-A451-59936557107C}
+	EndGlobalSection
+EndGlobal
